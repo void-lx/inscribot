@@ -1,0 +1,17 @@
+{
+    "bot": {
+        "Prefix": "!"
+    },
+    "discord": {
+        "DiscordToken": "token",
+        "Resultado": "id",
+        "Inscricao": "id"
+    },
+
+    "twitch": {
+        "Token": "oauth:token",
+        "Username": "user",
+        "Channel": "channel"
+    }
+
+}
