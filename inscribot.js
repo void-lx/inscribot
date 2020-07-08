@@ -40,8 +40,6 @@ tClient.on('message', (channel, tags, message, self) => {
         }
     }
 
-
-
     if (message.toLowerCase().startsWith(config.bot.Prefix + 'resultado ')) {
         if (is_Open) {
             if (subscache.includes(tags.username)) {
@@ -72,19 +70,18 @@ tClient.on('message', (channel, tags, message, self) => {
         tClient.say(config.twitch.Channel, `As inscrições para o torneio estão encerradas!`);
     }
 
-
 });
 
 //evento onready do discord
 dClient.on('ready', () => {
-    //se quise alguma mensgem quando o bot logar, é aqui.
+    //se quiser alguma mensgem ou comando quando o bot logar, é aqui.
 });
 
-//evento on message
+//evento onmessage
 dClient.on('message', async msg => {
 // pega mensagens do chat.
-//exemplo abaixo:
-    /*if (msg.content.toLowerCase() === (config.bot.Prefix + "olá")) {
+//exemplo abaixo responde olá! ao usuário que enviar !oi:
+    /*if (msg.content.toLowerCase() === (config.bot.Prefix + "oi")) {
         msg.reply("olá!");
     }*/
 });
