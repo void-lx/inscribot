@@ -29,8 +29,8 @@ Comandos:
 =======================
 
 conteúdo config.json
+        
         "Prefix": "!"
-
         "DiscordToken": "token da conta do discord",
         "Resultado": "id da sala que serão escritos os resultados. ex: 51235325353234",
         "Inscricao": "id da sala do discord onde serão escritos os dados de inscrição. ex: 51235325353234"
