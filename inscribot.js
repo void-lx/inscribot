@@ -41,19 +41,13 @@ tClient.on('message', (channel, tags, message, self) => {
     }
 
     if (message.toLowerCase().startsWith(config.bot.Prefix + 'resultado ')) {
-        if (is_Open) {
             if (subscache.includes(tags.username)) {
                 //enviar resultado
                 dClient.channels.cache.get(config.discord.Resultado).send(message.substr(1));
                 subscache.splice(subscache.indexOf(tags.username), 1)
                 tClient.say(config.twitch.Channel, `@${tags.username}, resultado enviado.`);
 
-            } else {
-                tClient.say(config.twitch.Channel, `@${tags.username}, você já reportou o resultado ou não participou do campeonato`);
-            }
-        } else {
-            tClient.say(config.twitch.Channel, `@${tags.username}, o campeonato não está em andamento`);
-        }
+            } 
     }
 
     if (message.toLowerCase() === config.bot.Prefix + 'ajudacamp') {
