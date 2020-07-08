@@ -24,3 +24,17 @@ Comandos:
 <code>!encerrar</code> para fechá-la;
 
 <code>!resultado</code> para os jogadores reportarem os resultados.
+
+
+=======================
+
+conteúdo config.json
+        "Prefix": "!"
+
+        "DiscordToken": "token da conta do discord",
+        "Resultado": "id da sala que serão escritos os resultados. ex: 51235325353234",
+        "Inscricao": "id da sala do discord onde serão escritos os dados de inscrição. ex: 51235325353234"
+
+        "Token": "oauth:token da twitch",
+        "Username": "nome da conta da twitch",
+        "Channel": "nome do canal que o bot estará"
